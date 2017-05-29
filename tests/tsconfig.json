@@ -1,0 +1,10 @@
+{
+  "compileOnSave": true,
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "../"
+  },
+  "include": [
+    "./**/*"
+  ]
+}

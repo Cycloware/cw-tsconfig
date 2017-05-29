@@ -1,0 +1,31 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "rootDir": "./",
+    "baseUrl": "./",
+    "typeRoots": [
+      "./node_modules/@cw-types",
+      "./node_modules/@types"
+    ],
+    "paths": {
+      "@cw/tsconfig": [
+        "./lib"
+      ],
+      "@cw/tsconfig/*": [
+        "./lib/*"
+      ],
+      "*": [
+        "./*",
+        "./node_modules/@cw-types/*",
+        "./node_modules/@types/*",
+        "./modules/*"
+      ],
+      "@cw-types/*": [
+        "./node_modules/@cw-types/*"
+      ],
+      "@types/*": [
+        "./node_modules/@types/*"
+      ]
+    }
+  }
+}

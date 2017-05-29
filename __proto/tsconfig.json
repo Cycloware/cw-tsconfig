@@ -1,0 +1,11 @@
+{
+  "compileOnSave": true,
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "../",
+    "outDir": "../__proto-out"
+  },
+  "include": [
+    "./**/*"
+  ]
+}

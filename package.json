@@ -1,6 +1,6 @@
 {
   "name": "@cw/tsconfig",
-  "version": "1.0.0-a",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "typings": "lib/index",
   "files": [
@@ -39,7 +39,7 @@
     "test": "clscr && jest --watch",
     "test:all": "clscr && jest --watchAll",
     "test:changed": "clscr && jest --watch --onlyChanged",
-    "build": "npm run build:lib && npm run build:sample && npm run build:proto",
+    "build": "npm run build:lib",
     "prebuild:lib": "clscr && rimraf lib",
     "build:lib": "tsc -p src/tsconfig.json",
     "build:lib:watch": "tsc -p src/tsconfig.json --watch --pretty",
@@ -50,18 +50,18 @@
     "strip-json-comments": "^2.0.1"
   },
   "devDependencies": {
-    "@types/jest": "19.2.3",
-    "@types/node": "^7.0.22",
+    "@types/jest": "22.1.2",
+    "@types/node": "^9.4.5",
     "@types/strip-bom": "^3.0.0",
-    "@types/strip-json-comments": "0.0.28",
-    "jest": "20.0.4",
-    "jest-cli": "20.0.4",
-    "module-alias": "^2.0.0",
-    "screen-clear": "^1.0.12",
-    "semantic-release": "^6.3.6",
-    "ts-jest": "^20.0.4",
-    "ts-node": "^3.0.4",
-    "typescript": "^2.3.3"
+    "@types/strip-json-comments": "0.0.30",
+    "jest": "22.2.2",
+    "jest-cli": "22.2.2",
+    "module-alias": "^2.0.3",
+    "screen-clear": "^1.0.13",
+    "semantic-release": "^12.4.1",
+    "ts-jest": "^22.0.3",
+    "ts-node": "^4.1.0",
+    "typescript": "^2.7.1"
   },
   "jest": {
     "globals": {
